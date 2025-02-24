@@ -55,7 +55,7 @@ export default function Navbar() {
                     </div>
                     <div className="col-lg-10 col-md-9 col-4">
                       <div className="main-menu-top">
-                        <div className="main-menu">
+                        <div className="main-menu" style={{ marginRight: "200px" }}>
                           <div className="navbar">
                             <div className="nav-item">
                               {/* <!-- Main-Menu --> */}
@@ -73,44 +73,32 @@ export default function Navbar() {
                                 <li>
                                   <Link
                                     className={` ${
-                                      pathname === "/services" ? "active" : ""
+                                      pathname === "/about-us" ? "active" : ""
                                     }`}
-                                    href="/services"
+                                    href="/about-us"
                                   >
-                                    Services
+                                    About
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="#">
-                                    Portfolio
-                                    <i className="fa fa-angle-down"></i>
+                                  <Link
+                                    className={` ${
+                                      pathname === "/process" ? "active" : ""
+                                    }`}
+                                    href="/process"
+                                  >
+                                    Process
                                   </Link>
-                                  <ul className="sub-menu">
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/portfolio"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/portfolio"
-                                      >
-                                        Portfolio
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/portfolio-single"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/portfolio-single"
-                                      >
-                                        Portfolio Single
-                                      </Link>
-                                    </li>
-                                  </ul>
+                                </li>
+                                <li>
+                                  <Link
+                                    className={` ${
+                                      pathname === "/business-for-sale" ? "active" : ""
+                                    }`}
+                                    href="/business-for-sale"
+                                  >
+                                    Business for Sale
+                                  </Link>
                                 </li>
                                 <li>
                                   <Link href="#">
@@ -154,91 +142,6 @@ export default function Navbar() {
                                   </ul>
                                 </li>
                                 <li>
-                                  <Link href="#">
-                                    Pages<i className="fa fa-angle-down"></i>
-                                  </Link>
-                                  <ul className="sub-menu">
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/about-us"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/about-us"
-                                      >
-                                        About Us
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/team" ? "active" : ""
-                                        }`}
-                                        href="/team"
-                                      >
-                                        Team
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/pricing"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/pricing"
-                                      >
-                                        Pricing
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/testimonials"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/testimonials"
-                                      >
-                                        Testimonials
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/faq" ? "active" : ""
-                                        }`}
-                                        href="/faq"
-                                      >
-                                        Faq&apos;s
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/404" ? "active" : ""
-                                        }`}
-                                        href="/404"
-                                      >
-                                        404 Page
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/mail-success"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/mail-success"
-                                      >
-                                        Mail Success
-                                      </Link>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
                                   <Link
                                     className={` ${
                                       pathname === "/contact" ? "active" : ""
@@ -255,7 +158,7 @@ export default function Navbar() {
                         {/* <!-- Menu-Right --> */}
                         <div className="menu-right">
                           <Link href="/contact" className="theme-btn">
-                            get a quote
+                            book consultation
                           </Link>
                         </div>
                         {/* <!-- End-Menu-Right --> */}
