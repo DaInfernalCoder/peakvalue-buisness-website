@@ -11,7 +11,7 @@ import {
 
 import SectionTitle from "@/components/SectionTitle";
 
-import FaqImg from "../../../public/images/faq-img.png";
+import FaqImg from "../../../public/images/faq-img.jpg";
 
 export default function FaqMain() {
   return (
