@@ -12,9 +12,11 @@ const ColorPlate = () => {
     "#78E08F",
     "#38ADA9",
     "#F3A712",
+    "#00265F"
+
   ];
 
-  const [primaryColor, setPrimaryColor] = useState(colors[0]);
+  const [primaryColor, setPrimaryColor] = useState(colors[8]);
 
   useEffect(() => {
     document.documentElement.style.setProperty("--primary-color", primaryColor);

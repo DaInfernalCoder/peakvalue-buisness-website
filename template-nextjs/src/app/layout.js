@@ -40,8 +40,8 @@ const poppins = Poppins({
 
 export const metadata = {
   title:
-    "Exbico Bonik - Multipurpose Business & Digital Agency NextJS Template",
-  description: "Multipurpose Business & Digital Agency NextJS Template",
+    "PeakValue Business Advisors",
+  description: "Trusted consulting firm providing strategic guidance, financial advisory, and business transformation services to help organizations reach their peak potential and maximize value.",
 };
 
 export default function RootLayout({ children }) {
