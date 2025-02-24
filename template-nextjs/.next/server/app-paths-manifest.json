@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/services/page": "app/services/page.js",
+  "/blog-sidebar/page": "app/blog-sidebar/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/blog-single/page": "app/blog-single/page.js"
+}
