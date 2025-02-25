@@ -15,11 +15,20 @@ export default function About() {
               data-wow-duration="1s"
             >
               {/* <!-- About image --> */}
-              <div className="about-img">
-                <Image src={AboutImg} alt="#" width={470} height={574} />
-                <div className="activity">
-                  <span>35+</span> Years
-                </div>
+              <div className="about-img" style={{ position: "relative", overflow: "hidden", maxWidth: "500px", margin: "0 auto" }}>
+                <Image 
+                  src={AboutImg} 
+                  alt="About Our Company" 
+                  width={500} 
+                  height={500} 
+                  style={{ 
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "auto",
+                    borderRadius: "8px"
+                  }} 
+                  priority
+                />
               </div>
             </div>
             <div
@@ -28,25 +37,25 @@ export default function About() {
             >
               {/* <!-- About content --> */}
               <div className="about-content">
-                <span>About company</span>
+                <span>About Company</span>
                 <h2>
-                  More Than <b>35+</b> Years, We Provide Business Solutions.
+                  Your Trusted Partner in Business Transactions
                 </h2>
                 <p>
-                  But I must explain to you how all this mistaken idea of
-                  denounc ing pleasure and praising pain was born and I will
-                  give yomplete acount of the system Quis ipsum suspendisse
-                  ultrices gravida. Risus commodo viverra
+                  At PeakValue, we specialize in connecting business sellers with qualified buyers, 
+                  providing expert guidance throughout the entire transaction process. 
+                  Our professional team ensures a streamlined experience for both 
+                  buying and selling businesses.
                 </p>
                 <div className="feature">
                   {/* <!-- Single Feature --> */}
                   <div className="single-feature">
                     <i className="fa fa-briefcase"></i>
                     <div className="feature-content">
-                      <h3>Smart Business Solutions!</h3>
+                      <h3>Expert Business Valuation</h3>
                       <p>
-                        Sedut perspiciatis unde omnis iste natus error sitlupt
-                        tem accusantium doloremque laudantium
+                        Professional business valuation services to help you 
+                        understand your business's true market value and potential
                       </p>
                     </div>
                   </div>
@@ -54,10 +63,10 @@ export default function About() {
                   <div className="single-feature">
                     <i className="fa fa-code"></i>
                     <div className="feature-content">
-                      <h3>Quality Coding & Best Service</h3>
+                      <h3>Comprehensive Brokerage Services</h3>
                       <p>
-                        Sedut perspiciatis unde omnis iste natus error sitlupt
-                        tem accusantium doloremque laudantium
+                        End-to-end support for buying and selling businesses, 
+                        including marketing, buyer screening, and transaction guidance
                       </p>
                     </div>
                   </div>

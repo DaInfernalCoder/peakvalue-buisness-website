@@ -1,6 +1,5 @@
 import About from "./About";
 import Links from "./Links";
-import Blogs from "./Blogs";
 import Contact from "./Contact";
 import Copyright from "./Copyright";
 
@@ -11,18 +10,24 @@ export default function Footer() {
     <>
       {/* <!-- Footer Area --> */}
       <footer
-        className="footer-area"
+        className="footer-area mt-5 pt-5"
         style={{
-          backgroundImage: `url(${FooterBg.src})`
+          backgroundImage: `url(${FooterBg.src})`,
+          backgroundColor: 'rgba(0, 0, 0, 0.9)',
+          backgroundBlend: 'overlay',
+          color: '#fff',
+          position: 'relative',
+          marginTop: 'auto'
         }}
       >
-        <div className="footer-top">
+        <div className="footer-top py-5">
           <div className="container">
-            <div className="row">
+            <div className="row gy-4 justify-content-between">
               <About />
               <Links />
-              <Blogs />
-              <Contact />
+              <div className="col-lg-4 col-md-6 col-12">
+                <Contact />
+              </div>
             </div>
           </div>
         </div>

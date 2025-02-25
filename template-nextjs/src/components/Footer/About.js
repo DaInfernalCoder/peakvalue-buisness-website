@@ -15,8 +15,9 @@ export default function About() {
           </div>
           <div className="about-description">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              PeakValue Business is your trusted partner in business brokerage. We connect qualified buyers 
+              with successful sellers, providing expert guidance through every step of your 
+              business transaction journey.
             </p>
           </div>
           {/* <!-- Quick Link Box -->	 */}
@@ -26,7 +27,7 @@ export default function About() {
             </div>
             <div className="contact-text">
               <p>Talk To Our Support</p>
-              <h5>1-322-344-888</h5>
+              <h5>1-832-712-4162</h5>
             </div>
           </div>
         </div>

@@ -12,19 +12,16 @@ export default function CallAction() {
         }}
       >
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8 col-12">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 col-12 mx-auto text-center">
               <div className="cta-content">
-                <h3>Build your Perfect Website Now!</h3>
+                <h3>Evaluate Your Business Today!</h3>
                 <p>
-                  If you want to create a new website for your business, do not
-                  hesitate to contact us today. We have created you to provide
-                  all types of services on the website. and praising pain was
-                  born and I will give yomplete acount of the system creatives
+                  If you want to sell your business, do not hesitate to contact us today. 
                 </p>
                 <div className="cta-button">
                   <Link href="/contact" className="theme-btn">
-                    Get started
+                    Get Started
                   </Link>
                 </div>
               </div>

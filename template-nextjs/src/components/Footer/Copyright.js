@@ -1,26 +1,17 @@
-import Image from "next/image";
-import PaymentImg from "../../../public/images/payment-img.png";
 import Link from "next/link";
 
 export default function Copyright() {
   return (
     <>
-      <div className="copyright">
+      <div className="copyright py-4 border-top border-secondary mt-3">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-12">
-              <div className="copyright-text">
+            <div className="col-12">
+              <div className="copyright-text text-center text-white">
                 <p>
-                  Copyright © 2024 Bonik. Design by {""}
-                  <Link href="https://pixetheme.com/" target="_blank">
-                    PixeTheme
-                  </Link>
+                  Copyright © {new Date().getFullYear()} PeakValue Business. All rights reserved. 
+                  
                 </p>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-12">
-              <div className="footer-bottom-img text-right">
-                <Image src={PaymentImg} alt="#" width={254} height={24} />
               </div>
             </div>
           </div>

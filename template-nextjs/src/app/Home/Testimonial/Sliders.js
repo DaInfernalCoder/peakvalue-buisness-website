@@ -6,35 +6,26 @@ import { Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
 
-import TestimonialImg1 from "../../../../public/images/testimonial/testi-1.jpg";
-import TestimonialImg2 from "../../../../public/images/testimonial/testi-2.jpg";
-import TestimonialImg3 from "../../../../public/images/testimonial/testi-3.jpg";
+import ClientImg1 from "../../../../public/images/client/client-1.jpg";
+import ClientImg2 from "../../../../public/images/client/client-2.jpg";
 
 export default function Sliders() {
   const [testimonialSliders, settestimonialSliders] = useState([
     {
       id: "slider1",
-      image: TestimonialImg1,
-      name: "John Smith",
-      designation: "Freelancer, Upwork",
+      image: ClientImg1,
+      name: "Don Babineaux",
+      designation: "Former President and Co-Owner",
       description:
-        "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.",
+        "\"Sunny's expertise was game changing for selling our business. Highly reccomend for any business owner looking to sell their business!\""
     },
     {
       id: "slider2",
-      image: TestimonialImg2,
-      name: "Poppy Jany",
-      designation: "Digital Marketer",
+      image: ClientImg2,
+      name: "Gonzalo & Yasmin Alvarado",
+      designation: "President, Sweet Milly LLC",
       description:
-        "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.",
-    },
-    {
-      id: "slider3",
-      image: TestimonialImg3,
-      name: "William Kanal",
-      designation: "Seo Expert",
-      description:
-        "We have a number of different teams within our agency that specialise in different areas of business so you can be sure that you won’t receive a generic service and although we boast a years and years of service.",
+        "\"We could not have sold our business without Sunny's help! He was a great partner.\"",
     },
   ]);
 
@@ -66,28 +57,6 @@ export default function Sliders() {
                     <h6>{singleSlider.name}</h6>
                     <p>{singleSlider.designation}</p>
                   </div>
-                  <ul className="testimonial-social">
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-facebook"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-twitter"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-dribbble"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#">
-                        <i className="fa fa-linkedin"></i>
-                      </Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="col-lg-8 col-md-6 col-12">

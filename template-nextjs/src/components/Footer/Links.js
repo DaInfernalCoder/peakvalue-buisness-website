@@ -10,7 +10,7 @@ export default function Links() {
           <ul>
             <li>
               <Link href="/about-us">
-                <i className="fa fa-angle-double-right"></i>About us
+                <i className="fa fa-angle-double-right"></i>About Us
               </Link>
             </li>
             <li>
@@ -19,18 +19,23 @@ export default function Links() {
               </Link>
             </li>
             <li>
-              <Link href="/portfolio">
-                <i className="fa fa-angle-double-right"></i>Creative Portfolio
+              <Link href="/business-for-sale">
+                <i className="fa fa-angle-double-right"></i>Business For Sale
               </Link>
             </li>
             <li>
-              <Link href="/pricing">
-                <i className="fa fa-angle-double-right"></i>Our Pricing
+              <Link href="/process">
+                <i className="fa fa-angle-double-right"></i>Our Process
+              </Link>
+            </li>
+            <li>
+              <Link href="/book-consultation">
+                <i className="fa fa-angle-double-right"></i>Book Consultation
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <i className="fa fa-angle-double-right"></i>Contact us
+                <i className="fa fa-angle-double-right"></i>Contact Us
               </Link>
             </li>
           </ul>

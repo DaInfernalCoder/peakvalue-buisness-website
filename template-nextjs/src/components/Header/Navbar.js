@@ -47,8 +47,8 @@ export default function Navbar() {
                           <Image
                             src={Logo}
                             alt="main-logo"
-                            width={133}
-                            height={51}
+                            width={250}
+                            height={150}
                           />
                         </Link>
                       </div>
@@ -157,7 +157,7 @@ export default function Navbar() {
                         </div>
                         {/* <!-- Menu-Right --> */}
                         <div className="menu-right">
-                          <Link href="/contact" className="theme-btn">
+                          <Link href="/book-consultation" className="theme-btn">
                             book consultation
                           </Link>
                         </div>

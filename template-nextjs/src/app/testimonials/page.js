@@ -1,5 +1,4 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
-import Team from "../Home/Team";
 import Testimonial from "../Home/Testimonial";
 
 export default function Testimonials() {
@@ -7,11 +6,10 @@ export default function Testimonials() {
     <>
       <Breadcrumbs
         title="Testimonials"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Discover what our valued clients have to say about their experience working with us."
         menuLink="testimonials"
         menuText="Testimonials"
       />
-      <Team />
       <Testimonial />
     </>
   );

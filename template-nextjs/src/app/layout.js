@@ -53,7 +53,6 @@ export default function RootLayout({ children }) {
           <ColorLayout>
             <Header />
             {children}
-            <Newsletter />
             <Footer />
             <ScrollTop />
             <Script src="/js/bootstrap.min.js"></Script>

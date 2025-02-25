@@ -13,7 +13,11 @@ export default function Service() {
         <div className="container">
           <div className="row">
             <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
-              <SectionTitle />
+              <SectionTitle 
+                smTitle="Our Expertise"
+                title="Professional Services"
+                description="We offer comprehensive business solutions to help you navigate complex challenges and achieve sustainable growth for your organization."
+              />
             </div>
           </div>
           <div className="row">
@@ -25,10 +29,9 @@ export default function Service() {
                 cardNumberClass="number"
                 cardNumber="1"
                 image={ServiceImg1}
-                icon="fa fa-edit"
+                icon="fa fa-briefcase"
                 title="Business Consulting"
-                description="  There is now an abundance of readable dummy texts. These are
-                    usually used when a text is required purely."
+                description="Strategic guidance to optimize your operations, streamline processes, and drive business growth. We analyze your business challenges and develop tailored solutions for sustainable success."
                 btnURL="contact"
               />
             </div>
@@ -40,10 +43,9 @@ export default function Service() {
                 cardNumberClass="number"
                 cardNumber="2"
                 image={ServiceImg2}
-                icon="fa fa-eye"
-                title="Graphics Design"
-                description="There is now an abundance of readable dummy texts. These are
-                usually used when a text is required purely."
+                icon="fa fa-handshake-o"
+                title="Strategic Acquisitions"
+                description="Expert assistance in identifying, evaluating, and executing strategic acquisitions to expand your market presence. We guide you through the entire acquisition process from target identification to integration."
                 btnURL="contact"
               />
             </div>
@@ -55,10 +57,9 @@ export default function Service() {
                 cardNumberClass="number last"
                 cardNumber="3"
                 image={ServiceImg3}
-                icon="fa fa-lightbulb-o"
-                title="Digital Marketing"
-                description="There is now an abundance of readable dummy texts. These are
-                usually used when a text is required purely."
+                icon="fa fa-line-chart"
+                title="Exit Strategies"
+                description="Comprehensive planning and execution of business exits and divestitures to maximize value. We help business owners prepare for successful transitions through strategic planning and market positioning."
                 btnURL="contact"
               />
             </div>

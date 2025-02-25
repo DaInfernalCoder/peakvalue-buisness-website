@@ -4,12 +4,6 @@ import SingleTeam from "@/components/SingleTeam";
 
 import TeamImg1 from "../../../public/images/team/1.jpg";
 import TeamImg2 from "../../../public/images/team/2.jpg";
-import TeamImg3 from "../../../public/images/team/3.jpg";
-import TeamImg4 from "../../../public/images/team/4.jpg";
-import TeamImg5 from "../../../public/images/team/5.jpg";
-import TeamImg6 from "../../../public/images/team/6.jpg";
-import TeamImg7 from "../../../public/images/team/7.jpg";
-import TeamImg8 from "../../../public/images/team/8.jpg";
 
 export default function Team() {
   return (

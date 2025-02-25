@@ -11,43 +11,22 @@ export default function Contact() {
             <ul className="contact-bottom">
               <li>
                 <Link href="#">
-                  <i className="fa fa-map-marker"></i>28/A Street, The king
-                  city, USA
+                  <i className="fa fa-map-marker"></i>Houston, Texas
                 </Link>
               </li>
               <li>
-                <Link href="tel:+0123456789">
-                  <i className="fa fa-phone"></i>+0123456789
+                <Link href="tel:1-832-712-4162">
+                  <i className="fa fa-phone"></i>1-832-712-4162
                 </Link>
               </li>
               <li>
-                <Link href="mailto:info@example.com">
-                  <i className="fa fa-envelope"></i>info@example.com
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {/* <!-- Footer Social --> */}
-          <div className="f-social">
-            <ul>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-facebook"></i>
+                <Link href="mailto:info@peakvaluebusiness.com">
+                  <i className="fa fa-envelope"></i>info@peakvaluebusiness.com
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <i className="fa fa-twitter"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-linkedin"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-instagram"></i>
+                  <i className="fa fa-clock-o"></i>Mon - Fri: 9:00 AM - 5:00 PM CST
                 </Link>
               </li>
             </ul>

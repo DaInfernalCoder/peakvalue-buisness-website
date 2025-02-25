@@ -16,12 +16,10 @@ export default function Testimonial() {
             <div className="row">
               <div className="col-lg-7 col-12">
                 <div className="section-title">
-                  <h3>CLient Testimonials</h3>
+                  <h3>Client Testimonials</h3>
                   <div className="line-bot"></div>
                   <p>
-                    All the lorem Ipsum generators on the Internet tend to
-                    repeat predefined chunks as necessary, making this the first
-                    true generator on the Internet.
+                    Read what our clients have to say about their experience working with us.
                   </p>
                 </div>
               </div>
