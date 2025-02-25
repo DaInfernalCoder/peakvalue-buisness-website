@@ -53,3 +53,9 @@ next-env.d.ts
 ehthumbs.db
 Thumbs.db
 template-nextjs/node_modules/
+
+# Memory Bank
+template-nextjs/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+.memory-bank/
+.gitignore
+.gitattributes
