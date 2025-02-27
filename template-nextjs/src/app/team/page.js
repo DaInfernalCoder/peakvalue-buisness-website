@@ -55,7 +55,7 @@ export default function Team() {
               data-wow-duration="1.3s"
             >
               <SingleTeam
-                image={TeamImg3}
+                image={TeamImg1}
                 name="Alex Smith"
                 designation="Founder, Director"
               />
@@ -66,7 +66,7 @@ export default function Team() {
               data-wow-duration="1.4s"
             >
               <SingleTeam
-                image={TeamImg4}
+                image={TeamImg2}
                 name="Anamika Dome"
                 designation="Digital Marketer"
               />
@@ -76,7 +76,7 @@ export default function Team() {
               data-wow-duration="1s"
             >
               <SingleTeam
-                image={TeamImg5}
+                image={TeamImg1}
                 name="Jonathon Will"
                 designation="Article Writter"
               />
@@ -87,7 +87,7 @@ export default function Team() {
               data-wow-duration="1.2s"
             >
               <SingleTeam
-                image={TeamImg6}
+                image={TeamImg2}
                 name="Hipolika Noir"
                 designation="Creative Designer"
               />
@@ -98,7 +98,7 @@ export default function Team() {
               data-wow-duration="1.3s"
             >
               <SingleTeam
-                image={TeamImg7}
+                image={TeamImg1}
                 name="Ostadam Jonab"
                 designation="SEO Expert"
               />
@@ -109,7 +109,7 @@ export default function Team() {
               data-wow-duration="1.4s"
             >
               <SingleTeam
-                image={TeamImg8}
+                image={TeamImg2}
                 name="William Jack"
                 designation="Developer, Designer"
               />

@@ -25,7 +25,7 @@ export default function Contact() {
                       <span>Contact</span>Request A Free Consulting
                     </h3>
                     <p>
-                    Find out what your business is really worth and get a clear picture of how the selling process works with our expert help. We're here to guide you through buying or selling your business, and you can count on us to keep everything completely confidential.
+                    Find out what your business is really worth and get a clear picture of how the selling process works with our expert help. We&apos;re here to guide you through buying or selling your business, and you can count on us to keep everything completely confidential.
                     </p>
                   </div>
                   <Form />

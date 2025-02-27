@@ -55,7 +55,7 @@ export default function About() {
                       <h3>Expert Business Valuation</h3>
                       <p>
                         Professional business valuation services to help you 
-                        understand your business's true market value and potential
+                        understand your business&apos;s true market value and potential
                       </p>
                     </div>
                   </div>
