@@ -71,7 +71,7 @@ export default function Process() {
                 <h3 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: '700' }}>Initial Conversation</h3>
                 <p style={{ marginBottom: '20px', lineHeight: '1.6' }}>
                   We begin with a confidential consultation to understand your goals, timeline, and reasons for selling. 
-                  This critical first step helps us assess your business's unique situation and develop a tailored approach.
+                  This critical first step helps us assess your business&#39;s unique situation and develop a tailored approach.
                 </p>
                 <ul style={{ listStyleType: 'none', padding: '0', marginTop: '15px' }}>
                   <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
@@ -378,7 +378,7 @@ export default function Process() {
             }}>
               <h3 style={{ fontSize: '28px', marginBottom: '20px' }}>Thank you for your interest in our services</h3>
               <p style={{ fontSize: '16px', maxWidth: '700px', margin: '0 auto 30px auto' }}>
-                We would love to hear from you. Contact us to set up a time for a digital consultation. Let's take the journey together.
+                We would love to hear from you. Contact us to set up a time for a digital consultation. Let&#39;s take the journey together.
               </p>
               <a href="/contact" className="theme-btn" style={{ 
                 display: 'inline-block',

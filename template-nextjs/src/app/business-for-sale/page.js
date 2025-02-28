@@ -24,7 +24,7 @@ export default function BusinessForSale() {
               <div className="business-listings">
                 {/* This section will be populated with actual business listings */}
                 <div className="alert alert-info">
-                  Our carefully selected business listings will be available soon. Contact us to discuss current off-market opportunities or to join our buyer's list for early access.
+                  Our carefully selected business listings will be available soon. Contact us to discuss current off-market opportunities or to join our buyer&#39;s list for early access.
                 </div>
               </div>
             </div>

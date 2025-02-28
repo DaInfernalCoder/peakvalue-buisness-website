@@ -28,7 +28,7 @@ export default function Team() {
               <SingleTeam
                 image={TeamImg1}
                 name="Sunny Datta"
-                designation="Founder & CEO"
+                designation="Founder & Business Advisor"
               />
             </div>
 
@@ -39,7 +39,7 @@ export default function Team() {
               <SingleTeam
                 image={TeamImg2}
                 name="Amita Datta"
-                designation="Strategy Director"
+                designation="Lead Strategic Director & Business Advisor"
               />
             </div>
           </div>

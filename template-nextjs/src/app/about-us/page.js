@@ -169,7 +169,7 @@ export default function AboutUs() {
               <div className="call-action-content">
                 <h2>Ready to Discuss Your Business Goals?</h2>
                 <p>
-                  If you're a business owner planning your next move or looking to make an acquisition,
+                  If you&#39;re a business owner planning your next move or looking to make an acquisition,
                   Sunny would love to understand your goals and dreams and explore how he can help you achieve them.
                 </p>
                 <div className="call-action-btn">
