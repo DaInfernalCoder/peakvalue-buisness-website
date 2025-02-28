@@ -4,28 +4,29 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
-import Image from "next/image";
-
-import ClientImg1 from "../../../../public/images/client/client-1.jpg";
-import ClientImg2 from "../../../../public/images/client/client-2.jpg";
 
 export default function Sliders() {
   const [testimonialSliders, settestimonialSliders] = useState([
     {
       id: "slider1",
-      image: ClientImg1,
       name: "Don Babineaux",
       designation: "Former President and Co-Owner, Century Instruments & Machine Co., Inc.",
       description:
-        "\"One of Sunny’s key strengths lies in his ability to navigate complex negotiations with ease, as you consistently exhibited a deep understanding of the industry landscape, which translated into well-informed decision-making throughout the process.  Your strategic approach, attention to detail, and comprehensive understanding of the market dynamics played a pivotal role in ensuring a seamless and profitable transaction in the sale of our business.\""
+        "\"One of your key strengths lies in your ability to navigate complex negotiations with ease, as you consistently exhibited a deep understanding of the industry landscape, which translated into well-informed decision-making throughout the process.  Your strategic approach, attention to detail, and comprehensive understanding of the market dynamics played a pivotal role in ensuring a seamless and profitable transaction in the sale of our business.\""
     },
     {
       id: "slider2",
-      image: ClientImg2,
       name: "Gonzalo & Yasmin Alvarado",
       designation: "President, Sweet Milly LLC",
       description:
-        "\"Sunny with great enthusiasm, empathy and security , managed to understand what we were looking for and transmit the confidence we needed to achieve it. We are extremely grateful for having counted on Sunny’s services, since beyond limiting itself to its functions, it managed to exceed our expectations, becoming a fundamental part of achieving the necessary agreements between all parties.\"",
+        "\"Your great enthusiasm, empathy and security , managed to understand what we were looking for and transmit the confidence we needed to achieve it. We are extremely grateful for having counted on your services, since beyond limiting itself to its functions, it managed to exceed our expectations, becoming a fundamental part of achieving the necessary agreements between all parties.\"",
+    },
+    {
+      id: "slider3",
+      name: "Surangi Udugama",
+      designation: "CEO, Hanna and Peige Sriwardane Company LLC",
+      description:
+        "\"You exhibited a genuine interest in understanding our vision and needs as though we felt that we are talking to a trusted friend rather than a business broker. Your commitment to learning about our goals and aspirations for the business truly sets you apart. We wholeheartedly recommend you to anyone seeking a business advisor in selling or buying a business who genuinely cares about their clients success.\"",
     },
   ]);
 
@@ -43,17 +44,9 @@ export default function Sliders() {
         {testimonialSliders.map((singleSlider) => (
           <SwiperSlide className="testimonial-item" key={singleSlider.id}>
             <div className="row">
-              <div className="col-lg-4 col-md-6 col-12">
+              <div className="col-lg-4 col-md-6 col-12 d-flex align-items-center">
                 <div className="testimnial-left">
-                  <div className="testimonial-head">
-                    <Image
-                      src={singleSlider.image}
-                      alt="#"
-                      width={150}
-                      height={150}
-                    />
-                  </div>
-                  <div className="testimonial-bottom">
+                  <div className="testimonial-bottom text-center">
                     <h6>{singleSlider.name}</h6>
                     <p>{singleSlider.designation}</p>
                   </div>
