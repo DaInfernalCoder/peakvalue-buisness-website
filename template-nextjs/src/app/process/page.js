@@ -4,38 +4,17 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
 import CallToAction from "@/components/CallToAction";
+import HeaderBanner from "@/components/HeaderBanner";
 
 export default function Process() {
   return (
     <>
       {/* Hero Section with Background Image */}
-      <div className="process-hero" style={{ 
-        position: 'relative', 
-        height: '400px',
-        backgroundImage: 'url("/images/breadcrumbs-bg.jpg")', 
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: 'white',
-        marginBottom: '50px'
-      }}>
-        <div style={{ 
-          position: 'absolute', 
-          top: 0, 
-          left: 0, 
-          width: '100%', 
-          height: '100%', 
-          backgroundColor: 'rgba(0,0,0,0.6)'
-        }}></div>
-        <div style={{ position: 'relative', textAlign: 'center', maxWidth: '800px', padding: '0 20px' }}>
-          <h1 style={{ fontSize: '42px', fontWeight: '700', marginBottom: '15px' }}>
-            Process
-          </h1>
-          
-        </div>
-      </div>
+      <HeaderBanner 
+        title="Process" 
+        titleWidth="1000px"
+        showOverlay={false}
+      />
       
       <div className="container mb-5">
         <div className="row">
