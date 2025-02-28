@@ -17,7 +17,7 @@ export default function Sliders() {
       name: "Don Babineaux",
       designation: "Former President and Co-Owner, Century Instruments & Machine Co., Inc.",
       description:
-        "\"Sunny's enthusiasm, empathy and confidence were exactly what we needed. He quickly understood our goals and gave us the reassurance we were looking for throughout the process. We're incredibly thankful we chose to work with Sunny - he went far beyond just doing his job and truly exceeded our expectations. What really stands out is how he became essential in helping all parties reach the necessary agreements. He wasn't just a service provider, but a crucial partner in our success.\""
+        "\"One of Sunny’s key strengths lies in his ability to navigate complex negotiations with ease, as you consistently exhibited a deep understanding of the industry landscape, which translated into well-informed decision-making throughout the process.  Your strategic approach, attention to detail, and comprehensive understanding of the market dynamics played a pivotal role in ensuring a seamless and profitable transaction in the sale of our business.\""
     },
     {
       id: "slider2",
@@ -25,7 +25,7 @@ export default function Sliders() {
       name: "Gonzalo & Yasmin Alvarado",
       designation: "President, Sweet Milly LLC",
       description:
-        "\"Working with Sunny was a game-changer for our business sale. He has this amazing ability to handle complex negotiations like they're second nature. What impressed me most was how deeply he understood our industry - it wasn't just surface knowledge, but real insight that led to smart decisions throughout the entire process. Sunny's strategic thinking, eye for detail, and grasp of market dynamics were instrumental in making our transaction both smooth and profitable. I couldn't have asked for a better partner during such an important transition for our company.\"",
+        "\"Sunny with great enthusiasm, empathy and security , managed to understand what we were looking for and transmit the confidence we needed to achieve it. We are extremely grateful for having counted on Sunny’s services, since beyond limiting itself to its functions, it managed to exceed our expectations, becoming a fundamental part of achieving the necessary agreements between all parties.\"",
     },
   ]);
 
