@@ -3,6 +3,7 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
+import CallToAction from "@/components/CallToAction";
 
 export default function Process() {
   return (
@@ -40,7 +41,7 @@ export default function Process() {
         <div className="row">
           <div className="col-lg-12">
             <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-              <h2 style={{ fontSize: '32px', marginBottom: '15px' }}>At Our Advisory Firm</h2>
+              <h2 style={{ fontSize: '32px', marginBottom: '15px' }}>Our Process</h2>
               <p style={{ fontSize: '16px', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
                 We follow a structured and collaborative process to ensure the successful delivery of exceptional results for our clients. 
                 Our proven approach has been carefully crafted to maximize your business value.
@@ -126,7 +127,7 @@ export default function Process() {
                 02
               </div>
               <div>
-                <h3 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: '700' }}>Value Assessment</h3>
+                <h3 style={{ fontSize: '24px', marginBottom: '15px', fontWeight: '700' }}>Business Value Assessment</h3>
                 <p style={{ marginBottom: '20px', lineHeight: '1.6' }}>
                   Our team conducts a comprehensive business valuation using multiple methodologies to determine an optimal asking price. 
                   We analyze financial history, growth potential, market conditions, and comparable sales.
@@ -366,34 +367,11 @@ export default function Process() {
             </div>
           </div>
         </div>
-
-        {/* CTA Section */}
-        <div className="row mt-5 mb-5">
-          <div className="col-lg-12">
-            <div style={{ 
-              textAlign: 'center', 
-              padding: '40px',
-              backgroundColor: '#f8f9fa',
-              borderRadius: '10px'
-            }}>
-              <h3 style={{ fontSize: '28px', marginBottom: '20px' }}>Thank you for your interest in our services</h3>
-              <p style={{ fontSize: '16px', maxWidth: '700px', margin: '0 auto 30px auto' }}>
-                We would love to hear from you. Contact us to set up a time for a digital consultation. Let&#39;s take the journey together.
-              </p>
-              <a href="/contact" className="theme-btn" style={{ 
-                display: 'inline-block',
-                padding: '12px 30px',
-                backgroundColor: '#00265F',
-                color: 'white',
-                borderRadius: '5px',
-                fontSize: '16px',
-                textDecoration: 'none',
-                fontWeight: '600'
-              }}>Start Process</a>
-            </div>
-          </div>
-        </div>
       </div>
+
+      {/* Move CallToAction outside of the container div */}
+      <CallToAction 
+      />
     </>
   );
 }
