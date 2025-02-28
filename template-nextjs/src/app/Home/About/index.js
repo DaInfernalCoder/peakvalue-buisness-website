@@ -17,8 +17,9 @@ export default function About() {
               {/* <!-- About image --> */}
               <div className="about-img" style={{ position: "relative", overflow: "hidden", maxWidth: "500px", margin: "0 auto" }}>
                 <Image 
+
                   src={AboutImg} 
-                  alt="About Our Company" 
+                  alt="About PeakValue" 
                   width={500} 
                   height={500} 
                   style={{ 
@@ -37,7 +38,7 @@ export default function About() {
             >
               {/* <!-- About content --> */}
               <div className="about-content">
-                <span>About Company</span>
+                <span>About PeakValue</span>
                 <h2>
                   Your Trusted Partner in Business Transactions
                 </h2>

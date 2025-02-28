@@ -6,15 +6,15 @@ import SectionTitle from "@/components/SectionTitle";
 export default function BusinessForSale() {
   return (
     <>
-      <Breadcrumbs pageTitle="Business for Sale" pageName="Business for Sale" />
+      <Breadcrumbs pageTitle="Businesses For Sale" pageName="Businesses For Sale" />
       
       <section className="section">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <SectionTitle
-                title="Available Businesses"
-                paragraph="Browse our curated selection of businesses for sale"
+                title="Premium Business Opportunities"
+                paragraph="Explore our exclusive selection of vetted businesses with proven financial performance"
               />
             </div>
           </div>
@@ -24,7 +24,7 @@ export default function BusinessForSale() {
               <div className="business-listings">
                 {/* This section will be populated with actual business listings */}
                 <div className="alert alert-info">
-                  Business listings coming soon. Please check back or contact us for current opportunities.
+                  Our carefully selected business listings will be available soon. Contact us to discuss current off-market opportunities or to join our buyer's list for early access.
                 </div>
               </div>
             </div>

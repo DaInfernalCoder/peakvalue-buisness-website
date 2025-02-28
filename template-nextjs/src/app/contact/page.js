@@ -8,7 +8,7 @@ export default function ContactPage() {
     <>
       <Breadcrumbs
         title="Contact"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Reach out to us to schedule a consultation or learn more about our services!"
         menuLink="contact"
         menuText="Contact"
       />

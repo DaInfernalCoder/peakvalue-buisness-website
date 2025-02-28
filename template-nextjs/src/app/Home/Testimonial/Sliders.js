@@ -15,9 +15,9 @@ export default function Sliders() {
       id: "slider1",
       image: ClientImg1,
       name: "Don Babineaux",
-      designation: "Former President and Co-Owner",
+      designation: "Former President and Co-Owner, Century Instruments & Machine Co., Inc.",
       description:
-        "\"Sunny's expertise was game changing for selling our business. Highly reccomend for any business owner looking to sell their business!\""
+        "\"Sunny's enthusiasm, empathy and confidence were exactly what we needed. He quickly understood our goals and gave us the reassurance we were looking for throughout the process. We're incredibly thankful we chose to work with Sunny - he went far beyond just doing his job and truly exceeded our expectations. What really stands out is how he became essential in helping all parties reach the necessary agreements. He wasn't just a service provider, but a crucial partner in our success.\""
     },
     {
       id: "slider2",
@@ -25,7 +25,7 @@ export default function Sliders() {
       name: "Gonzalo & Yasmin Alvarado",
       designation: "President, Sweet Milly LLC",
       description:
-        "\"We could not have sold our business without Sunny's help! He was a great partner.\"",
+        "\"Working with Sunny was a game-changer for our business sale. He has this amazing ability to handle complex negotiations like they're second nature. What impressed me most was how deeply he understood our industry - it wasn't just surface knowledge, but real insight that led to smart decisions throughout the entire process. Sunny's strategic thinking, eye for detail, and grasp of market dynamics were instrumental in making our transaction both smooth and profitable. I couldn't have asked for a better partner during such an important transition for our company.\"",
     },
   ]);
 
