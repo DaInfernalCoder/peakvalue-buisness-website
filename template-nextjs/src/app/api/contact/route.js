@@ -2,17 +2,30 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
 
-// Initialize Supabase client - using proper environment variables
+// Server Component: This file is executed on the server side only
+
+// Initialize Supabase client - with error handling for missing environment variables
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY; // Removed NEXT_PUBLIC prefix for security
-const supabase = createClient(supabaseUrl, supabaseServiceKey);
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+// Check if required environment variables are defined
+if (!supabaseUrl || !supabaseServiceKey) {
+  console.error('Missing Supabase environment variables:', {
+    hasUrl: !!supabaseUrl,
+    hasServiceKey: !!supabaseServiceKey
+  });
+}
+
+// Create Supabase client with fallbacks to prevent build errors
+const supabase = createClient(supabaseUrl || '', supabaseServiceKey || '');
 
 // Initialize Resend
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resendApiKey = process.env.RESEND_API_KEY;
+const resend = new Resend(resendApiKey || ''); // Add fallback for build time
 
-// Business email to receive notifications
-const BUSINESS_EMAIL = process.env.BUSINESS_EMAIL || 'your-business-email@example.com';
-const SENDER_EMAIL = 'Peak Value <onboarding@resend.dev>';
+// Business email to receive notifications - using the correct env variable names
+const BUSINESS_EMAIL = process.env.CONTACT_ADMIN_EMAIL || 'info@peakvaluebusiness.com';
+const SENDER_EMAIL = process.env.CONTACT_FROM_EMAIL || 'onboarding@resend.dev';
 
 export async function POST(request) {
   try {
@@ -37,6 +50,15 @@ export async function POST(request) {
       );
     }
 
+    // Check if Supabase is properly initialized
+    if (!supabaseUrl || !supabaseServiceKey) {
+      console.error('Cannot store contact - Supabase environment variables missing');
+      return NextResponse.json(
+        { error: 'Server configuration error' },
+        { status: 500 }
+      );
+    }
+
     // Store contact data in Supabase
     const { data: contactData, error: supabaseError } = await supabase
       .from('contacts')
@@ -56,6 +78,21 @@ export async function POST(request) {
         { error: 'Failed to store contact information' },
         { status: 500 }
       );
+    }
+
+    // Check if Resend API key is available
+    if (!resendApiKey) {
+      console.error('Resend API key is missing');
+      await supabase
+        .from('contacts')
+        .update({ status: 'email_config_error' })
+        .eq('id', contactData[0].id);
+
+      return NextResponse.json({
+        success: true,
+        message: 'Contact stored, but email notifications are not configured',
+        data: contactData
+      });
     }
 
     // Send notification email to business owner
