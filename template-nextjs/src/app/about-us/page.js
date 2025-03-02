@@ -159,6 +159,7 @@ export default function AboutUs() {
       <HeaderBanner 
         title="About Us"
         titleWidth="1000px"
+        bannerType="about"
         showOverlay={false}
       />
 

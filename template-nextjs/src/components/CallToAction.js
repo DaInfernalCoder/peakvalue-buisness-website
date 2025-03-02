@@ -1,10 +1,12 @@
-import Link from "next/link";
+"use client";
+
+import ButtonBookConsultation from "./ButtonBookConsultation";
 
 export default function CallToAction({
   title = "Ready to Discuss Your Business Goals?",
   description = "If you're a business owner planning your next move or looking to make an acquisition, PeakValue Advisors would love to understand your goals and dreams and explore how we can help you achieve them.",
   buttonText = "Book a Discovery Call",
-  buttonLink = "/book-consultation"
+  useCalendlyPopup = true
 }) {
   return (
     <section className="call-action section-padding" style={{ 
@@ -35,20 +37,41 @@ export default function CallToAction({
                 {description}
               </p>
               <div className="call-action-btn">
-                <Link href={buttonLink} className="theme-btn" style={{
-                  display: "inline-block",
-                  padding: "15px 35px",
-                  backgroundColor: "white",
-                  color: "#00265F",
-                  borderRadius: "5px",
-                  fontSize: "16px",
-                  textDecoration: "none",
-                  fontWeight: "600",
-                  transition: "all 0.3s ease",
-                  boxShadow: "0 5px 15px rgba(0, 0, 0, 0.1)"
-                }}>
-                  {buttonText}
-                </Link>
+                {useCalendlyPopup ? (
+                  <ButtonBookConsultation
+                    buttonText={buttonText}
+                    variant="primary"
+                    size="md"
+                    className="d-inline-block"
+                    style={{
+                      display: "inline-block",
+                      padding: "15px 35px",
+                      backgroundColor: "white",
+                      color: "#00265F",
+                      borderRadius: "5px",
+                      fontSize: "16px",
+                      textDecoration: "none",
+                      fontWeight: "600",
+                      transition: "all 0.3s ease",
+                      boxShadow: "0 5px 15px rgba(0, 0, 0, 0.1)"
+                    }}
+                  />
+                ) : (
+                  <a href="/book-consultation" className="theme-btn" style={{
+                    display: "inline-block",
+                    padding: "15px 35px",
+                    backgroundColor: "white",
+                    color: "#00265F",
+                    borderRadius: "5px",
+                    fontSize: "16px",
+                    textDecoration: "none",
+                    fontWeight: "600",
+                    transition: "all 0.3s ease",
+                    boxShadow: "0 5px 15px rgba(0, 0, 0, 0.1)"
+                  }}>
+                    {buttonText}
+                  </a>
+                )}
               </div>
             </div>
           </div>

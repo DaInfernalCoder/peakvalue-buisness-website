@@ -10,7 +10,17 @@ export default function About() {
         <div className="single-widget footer-about">
           <div className="footer-logo">
             <Link className="logo" href="/">
-              <Image src={Logo} alt="#" width={134} height={50} />
+              <Image 
+                src={Logo} 
+                alt="PeakValue Business Logo" 
+                width={200} 
+                height={100} 
+                style={{ 
+                  maxWidth: '100%', 
+                  height: 'auto' 
+                }} 
+                priority
+              />
             </Link>
           </div>
           <div className="about-description">

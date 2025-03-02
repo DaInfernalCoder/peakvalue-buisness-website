@@ -1,19 +1,34 @@
 import React from 'react';
 import Image from 'next/image';
 
+// Default image paths (including Unsplash URLs for professional business imagery)
+const DEFAULT_IMAGES = {
+  about: "https://images.unsplash.com/photo-1562564055-71e051d33c19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Professional contract signing
+  process: "/images/business-meeting.jpg",
+  business: "/images/business-handshake.jpg",
+  contact: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Professional signing document
+  default: "/images/breadcrumbs-bg.jpg"
+};
+
 export default function HeaderBanner({ 
   title, 
   backgroundImage = "/images/breadcrumbs-bg.jpg",
+  bannerType, // New prop for selecting from our preset images
   height = "400px",
   overlayColor = "rgba(0, 38, 95, 0.8)", // Using brand blue with opacity
   titleWidth = "800px", // Making the title container wider as requested
   showOverlay = true // New prop to control whether to show the overlay or not
 }) {
+  // Determine which background image to use
+  let bgImage = backgroundImage;
+  if (bannerType && DEFAULT_IMAGES[bannerType]) {
+    bgImage = DEFAULT_IMAGES[bannerType];
+  }
   return (
     <div className="header-banner" style={{ 
       position: 'relative', 
       height: height,
-      backgroundImage: `url("${backgroundImage}")`, 
+      backgroundImage: `url("${bgImage}")`, 
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       display: 'flex',
@@ -53,4 +68,4 @@ export default function HeaderBanner({
       </div>
     </div>
   );
-} 
+}

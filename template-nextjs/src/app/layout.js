@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ScrollTop from "@/components/ScrollTop";
 import ColorLayout from "@/components/ColorLayout";
 import Preloader from "@/components/Preloader";
+import { CalendlyProvider } from "@/context/CalendlyContext";
 import { Poppins } from "next/font/google";
 
 // Bootstrap CSS
@@ -50,13 +51,15 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <>
           <Preloader />
-          <ColorLayout>
-            <Header />
-            {children}
-            <Footer />
-            <ScrollTop />
-            <Script src="/js/bootstrap.min.js"></Script>
-          </ColorLayout>
+          <CalendlyProvider>
+            <ColorLayout>
+              <Header />
+              {children}
+              <Footer />
+              <ScrollTop />
+              <Script src="/js/bootstrap.min.js"></Script>
+            </ColorLayout>
+          </CalendlyProvider>
         </>
       </body>
     </html>

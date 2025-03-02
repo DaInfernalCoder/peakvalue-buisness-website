@@ -13,6 +13,7 @@ export default function BusinessForSale() {
       <HeaderBanner 
         title="Businesses For Sale" 
         titleWidth="1000px"
+        bannerType="business"
         showOverlay={false} // Disable the blue overlay to only show the image
       />
       
@@ -112,7 +113,7 @@ export default function BusinessForSale() {
           <div className="row" style={{ marginTop: "60px" }}>
             <div className="col-lg-12">
               <div style={{ 
-                backgroundImage: "linear-gradient(135deg, rgba(0, 38, 95, 0.95), rgba(0, 38, 95, 0.85)), url('/images/breadcrumbs-bg.jpg')",
+                backgroundImage: "linear-gradient(135deg, rgba(0, 38, 95, 0.95), rgba(0, 38, 95, 0.85)), url('/images/business-contract.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 padding: "50px 40px",

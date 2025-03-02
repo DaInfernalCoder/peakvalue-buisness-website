@@ -1,9 +1,7 @@
 import SectionTitle from "@/components/SectionTitle";
 import SingleService from "@/components/SingleService";
 
-import ServiceImg1 from "../../../../public/images/service/service-img-1.jpg";
-import ServiceImg2 from "../../../../public/images/service/service-img-2.jpg";
-import ServiceImg3 from "../../../../public/images/service/service-img-3.jpg";
+// Using our custom SVG icons
 
 export default function Service() {
   return (
@@ -28,7 +26,7 @@ export default function Service() {
               <SingleService
                 cardNumberClass="number"
                 cardNumber="1"
-                image={ServiceImg1}
+                image="/images/icons/briefcase-bw.svg"
                 icon="fa fa-briefcase"
                 title="Business Consulting"
                 description="Strategic guidance to optimize your operations, streamline processes, and drive business growth. We analyze your business challenges and develop tailored solutions for sustainable success."
@@ -42,7 +40,7 @@ export default function Service() {
               <SingleService
                 cardNumberClass="number"
                 cardNumber="2"
-                image={ServiceImg2}
+                image="/images/icons/handshake-bw.svg"
                 icon="fa fa-handshake-o"
                 title="Strategic Acquisitions"
                 description="Expert assistance in identifying, evaluating, and executing strategic acquisitions to expand your market presence. We guide you through the entire acquisition process from target identification to integration."
@@ -56,7 +54,7 @@ export default function Service() {
               <SingleService
                 cardNumberClass="number last"
                 cardNumber="3"
-                image={ServiceImg3}
+                image="/images/icons/trending-up-bw.svg"
                 icon="fa fa-line-chart"
                 title="Exit Strategies"
                 description="Comprehensive planning and execution of business exits and divestitures to maximize value. We help business owners prepare for successful transitions through strategic planning and market positioning."

@@ -8,6 +8,7 @@ export default function SingleService(props) {
     cardNumberClass,
     cardNumber,
     image,
+    svgIcon,
     icon,
     title,
     description,
@@ -22,12 +23,29 @@ export default function SingleService(props) {
         </div>
         <div className="service-head">
           <div className="service-img">
-            <Image
-              src={image ? image : ServiceImg1}
-              alt="#"
-              width={100}
-              height={100}
-            />
+            {/* If SVG icon is provided, use it; otherwise use Image */}
+            {svgIcon ? (
+              <div className="svg-icon-container" style={{ 
+                width: '100px', 
+                height: '100px', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center',
+                backgroundColor: '#f5f8ff',
+                borderRadius: '50%',
+                overflow: 'hidden',
+                position: 'relative'
+              }}>
+                {svgIcon}
+              </div>
+            ) : (
+              <Image
+                src={image ? image : ServiceImg1}
+                alt="#"
+                width={100}
+                height={100}
+              />
+            )}
             <i className={icon ? icon : "fa fa-edit"}></i>
           </div>
         </div>

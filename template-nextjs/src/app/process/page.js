@@ -13,6 +13,7 @@ export default function Process() {
       <HeaderBanner 
         title="Process" 
         titleWidth="1000px"
+        bannerType="process"
         showOverlay={false}
       />
       
