@@ -7,6 +7,7 @@ import ColorLayout from "@/components/ColorLayout";
 import Preloader from "@/components/Preloader";
 import { CalendlyProvider } from "@/context/CalendlyContext";
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 
 // Bootstrap CSS
 import "../../public/css/bootstrap.min.css";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={poppins.className}>
         <>
+          <Analytics />
           <Preloader />
           <CalendlyProvider>
             <ColorLayout>
