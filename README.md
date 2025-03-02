@@ -1,5 +1,9 @@
 # Modern Next.js Business Template
 
+I hope this helps you, if you still need this to be professionally designed for you contact us at digital seo bull
+website: https://digitalseobull.com/
+number: 832 712 4162
+
 A modern, responsive business website template built with Next.js 14, React 18, and Bootstrap 5. Features a comprehensive set of components and pages for building professional business websites.
 
 ## ✨ Features
