@@ -1427,15 +1427,28 @@ Version: 1.0.0
 	Blog Area CSS
 ========================================*/
 .blog-area {
-  padding: 100px 0;
+  padding: 80px 0;
+  background-color: #f8f9fa;
 }
+
+.blog-area.archive {
+  background-color: #fff;
+  padding-top: 50px;
+}
+
 .blog-slider {
   margin-top: 30px;
 }
 .blog-area .single-blog {
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
 }
+
 .single-blog::before {
   position: absolute;
   content: "";
@@ -2948,3 +2961,293 @@ Version: 1.0.0
 /*===========================
 	End Footer Area CSS
 ============================*/
+
+/* Breadcrumbs Styling */
+.breadcrumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 34, 50, 0.7);
+  z-index: 0;
+}
+
+.breadcrumbs .container {
+  position: relative;
+  z-index: 1;
+}
+
+.breadcrumbs-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.breadcrumbs-content p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.breadcrumbs-menu ul li {
+  display: inline-block;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.breadcrumbs-menu ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.breadcrumbs-menu ul li a:hover {
+  color: var(--primary-color);
+}
+
+.breadcrumbs-menu ul li.active a {
+  color: var(--primary-color);
+}
+
+/* Blog Styling Improvements */
+.blog-area {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.blog-area.archive {
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.blog-slider {
+  margin-top: 30px;
+}
+
+.blog-area .single-blog {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.single-blog:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.single-blog .blog-img {
+  position: relative;
+  overflow: hidden;
+  height: 220px; /* Fixed height for consistent cards */
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.8s ease;
+}
+
+.single-blog:hover .blog-img img {
+  transform: scale(1.1);
+}
+
+.single-blog .blog-body {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  padding: 25px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.single-blog .blog-body h3 {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.single-blog .blog-body h3 a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.single-blog .blog-excerpt {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.single-blog .button .btn {
+  padding: 10px 20px;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.single-blog .button .btn:hover {
+  background: #26313c;
+}
+
+/* Blog Single Page Styling */
+.blog-single {
+  padding: 80px 0;
+}
+
+.blog-single .single-inner {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.blog-single .post-thumbnails img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+.blog-single .post-details {
+  padding: 30px;
+}
+
+.blog-single .post-meta {
+  margin-bottom: 15px;
+}
+
+.blog-single .post-meta span {
+  margin-right: 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+.blog-single .post-meta span i {
+  margin-right: 5px;
+  color: var(--primary-color);
+}
+
+.blog-single .post-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #26313c;
+}
+
+.blog-single .post-content {
+  margin-bottom: 30px;
+}
+
+.blog-single .post-content p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.blog-single .post-content h3 {
+  font-size: 24px;
+  margin: 30px 0 15px;
+  color: #26313c;
+}
+
+.blog-single .post-content ul, 
+.blog-single .post-content ol {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.blog-single .post-content li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.blog-single .post-author {
+  padding: 30px;
+  background: #f8f9fa;
+  border-top: 1px solid #eee;
+}
+
+.blog-single .post-author-inner {
+  display: flex;
+  align-items: center;
+}
+
+.blog-single .author-image {
+  flex: 0 0 100px;
+  margin-right: 20px;
+}
+
+.blog-single .author-image img {
+  border-radius: 50%;
+}
+
+.blog-single .author-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.blog-single .author-content .designation {
+  color: var(--primary-color);
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-single .author-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.blog-single .post-nav {
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 20px 30px;
+}
+
+.blog-single .prev-post,
+.blog-single .next-post {
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.blog-single .prev-post:hover,
+.blog-single .next-post:hover {
+  background: #f8f9fa;
+}
+
+.blog-single .prev-post h4,
+.blog-single .next-post h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.blog-single .prev-post span,
+.blog-single .next-post span {
+  font-size: 13px;
+  color: var(--primary-color);
+}
+
+.blog-single .next-post {
+  text-align: right;
+}

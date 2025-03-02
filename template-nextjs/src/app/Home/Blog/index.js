@@ -1,5 +1,6 @@
 import SectionTitle from "@/components/SectionTitle";
 import Sliders from "./Slider";
+import Link from "next/link";
 
 export default function Blog() {
   return (
@@ -20,9 +21,13 @@ export default function Blog() {
             <div
               className="col-12 wow animate__fadeInUp"
               data-wow-duration="1s"
-              style={{ position: "relative" }}
             >
               <Sliders />
+              <div className="text-center mt-5">
+                <Link href="/blog" className="btn btn-lg btn-primary px-5 py-3 fw-bold">
+                  View All Articles
+                </Link>
+              </div>
             </div>
           </div>
         </div>

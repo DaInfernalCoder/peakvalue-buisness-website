@@ -9,22 +9,27 @@ export default function Breadcrumbs(props) {
       <div
         className="breadcrumbs"
         style={{
-          backgroundImage: `url(${BreadcrumbBg.src})`
+          backgroundImage: `url(${BreadcrumbBg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          position: 'relative',
         }}
       >
+        <div className="breadcrumb-overlay"></div>
         <div className="container">
           <div className="row">
-            <div className="col-lg-7 col-md-7 col-12">
+            <div className="col-lg-8 col-md-8 col-12">
               <div className="breadcrumbs-content">
-                <h2>{title ? title : "Services"}</h2>
-                <p>
+                <h1>{title ? title : "Services"}</h1>
+                <p className="text-white">
                   {description
                     ? description
                     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore."}
                 </p>
               </div>
             </div>
-            <div className="col-lg-5 col-md-5 col-12">
+            <div className="col-lg-4 col-md-4 col-12">
               <div className="breadcrumbs-menu">
                 <ul>
                   <li>
