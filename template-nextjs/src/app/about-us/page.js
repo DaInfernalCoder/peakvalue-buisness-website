@@ -3,6 +3,7 @@ import Link from "next/link";
 import SectionTitle from "@/components/SectionTitle";
 import CallToAction from "@/components/CallToAction";
 import HeaderBanner from "@/components/HeaderBanner";
+import VideoTestimonial from "@/components/VideoTestimonial";
 
 // Import professional headshot images
 import SunnyImg from "../../../public/images/team/1.jpg";
@@ -455,14 +456,14 @@ export default function AboutUs() {
                       fontWeight: "600",
                       color: "#333"
                     }}>
-                      John Doe
+                      Surangi Udugama
                     </h4>
                     <p style={{
                       margin: "0",
                       fontSize: "14px",
                       color: "#666"
                     }}>
-                      Former CEO, Tech Solutions Inc.
+                      CEO, Hanna and Peige LLC
                     </p>
                   </div>
                 </div>
@@ -472,7 +473,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
+      {/* Call to Action */}
       <CallToAction />
     </div>
   );

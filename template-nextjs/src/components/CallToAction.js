@@ -11,8 +11,7 @@ export default function CallToAction({
   return (
     <section className="call-action section-padding" style={{ 
       padding: "70px 0",
-      backgroundColor: "#00265F",
-      backgroundImage: "linear-gradient(135deg, rgba(0, 38, 95, 0.95), rgba(0, 38, 95, 0.85)), url('/images/breadcrumbs-bg.jpg')",
+      backgroundImage: "url('/images/cta-background.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center"
     }}>
@@ -24,15 +23,17 @@ export default function CallToAction({
                 color: "white", 
                 fontSize: "36px", 
                 fontWeight: "700",
-                marginBottom: "20px"
+                marginBottom: "20px",
+                textShadow: "0 2px 5px rgba(0, 0, 0, 0.8)"
               }}>{title}</h2>
               <p style={{ 
-                color: "rgba(255, 255, 255, 0.85)", 
+                color: "rgba(255, 255, 255, 0.95)", 
                 fontSize: "18px", 
                 lineHeight: "1.7",
                 marginBottom: "30px",
                 maxWidth: "800px",
-                margin: "0 auto 30px"
+                margin: "0 auto 30px",
+                textShadow: "0 1px 3px rgba(0, 0, 0, 0.8)"
               }}>
                 {description}
               </p>
@@ -79,4 +80,4 @@ export default function CallToAction({
       </div>
     </section>
   );
-} 
+}

@@ -11,8 +11,8 @@ export default function SingleBlog(props) {
   const postSlug = slug || title?.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || "blog-post";
   
   return (
-    <div className="single-blog h-100">
-      <div className="blog-img">
+    <div className="single-blog h-100 shadow rounded overflow-hidden">
+      <div className="blog-img position-relative">
         <Link href={`/blog/${postSlug}`}>
           <Image
             src={image ? image : DEFAULT_BLOG_IMG}
@@ -20,20 +20,22 @@ export default function SingleBlog(props) {
             width={600}
             height={400}
             priority={false}
-            style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+            style={{ width: '100%', height: '250px', objectFit: 'cover' }}
           />
         </Link>
-        <span className="date">{date ? date : "Sep 25"}</span>
+        <span className="date position-absolute py-1 px-3 rounded text-white bg-primary" style={{ bottom: '15px', left: '15px', fontSize: '14px' }}>
+          {date ? date : "Sep 25"}
+        </span>
       </div>
-      <div className="blog-body">
-        <h3 className="mb-3">
-          <Link href={`/blog/${postSlug}`} className="text-wrap">
+      <div className="blog-body p-4">
+        <h3 className="mb-3" style={{ fontSize: '20px', lineHeight: '1.4' }}>
+          <Link href={`/blog/${postSlug}`} className="text-wrap text-decoration-none text-dark">
             {title ? title : "The Best Dolor Sitamet Consectetur Adipiscing"}
           </Link>
         </h3>
-        {excerpt && <p className="blog-excerpt text-muted mb-4">{excerpt}</p>}
+        {excerpt && <p className="blog-excerpt text-muted mb-4" style={{ fontSize: '15px', lineHeight: '1.6' }}>{excerpt}</p>}
         <div className="button">
-          <Link href={`/blog/${postSlug}`} className="btn">Read More</Link>
+          <Link href={`/blog/${postSlug}`} className="btn btn-primary rounded-pill px-4">Read More</Link>
         </div>
       </div>
     </div>

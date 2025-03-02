@@ -14,19 +14,19 @@ export default function Blog() {
       />
 
       {/* <!-- Blog Archive --> */}
-      <section id="blogs" className="blog-area archive section">
+      <section id="blogs" className="blog-area archive section py-5">
         <div className="container">
           <div className="row mb-5">
             <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 text-center">
               <div className="section-title">
-                <h2>Latest Articles & Insights</h2>
-                <p>Stay informed with expert advice and industry knowledge from our experienced business brokers.</p>
+                <h2 className="mb-3">Latest Articles & Insights</h2>
+                <p className="lead text-muted">Stay informed with expert advice and industry knowledge from our experienced business brokers.</p>
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row g-4">
             {blogPosts.map((post) => (
-              <div key={post.id} className="col-lg-4 col-md-6 col-12 mb-5">
+              <div key={post.id} className="col-lg-4 col-md-6 col-12">
                 <SingleBlog
                   slug={post.slug}
                   image={post.image}

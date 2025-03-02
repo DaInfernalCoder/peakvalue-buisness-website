@@ -22,7 +22,7 @@ export default function BookConsultation() {
                   <h3 className="mb-3">Schedule Your Free 30-Minute Consultation</h3>
                   <p className="text-muted mb-4">
                     Speak with our business advisors about your goals and how we can help you achieve them.
-                    Whether you're looking to buy or sell a business, we're here to guide you through the process.
+                    Whether you&apos;re looking to buy or sell a business, we&apos;re here to guide you through the process.
                   </p>
                 </div>
               </div>

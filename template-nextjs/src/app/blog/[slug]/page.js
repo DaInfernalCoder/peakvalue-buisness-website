@@ -15,7 +15,7 @@ export default function BlogPost({ params }) {
       <div className="section">
         <div className="container text-center py-5">
           <h2>Blog Post Not Found</h2>
-          <p>The blog post you're looking for doesn't exist or has been moved.</p>
+          <p>The blog post you&apos;re looking for doesn&apos;t exist or has been moved.</p>
           <Link href="/blog" className="btn">Return to Blog</Link>
         </div>
       </div>
