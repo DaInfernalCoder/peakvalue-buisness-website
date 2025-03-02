@@ -23,17 +23,14 @@ export default function SingleBlog(props) {
             style={{ width: '100%', height: '250px', objectFit: 'cover' }}
           />
         </Link>
-        <span className="date position-absolute py-1 px-3 rounded text-white bg-primary" style={{ bottom: '15px', left: '15px', fontSize: '14px' }}>
-          {date ? date : "Sep 25"}
-        </span>
       </div>
       <div className="blog-body p-4">
         <h3 className="mb-3" style={{ fontSize: '20px', lineHeight: '1.4' }}>
-          <Link href={`/blog/${postSlug}`} className="text-wrap text-decoration-none text-dark">
+          <Link href={`/blog/${postSlug}`} className="text-wrap text-decoration-none text-white">
             {title ? title : "The Best Dolor Sitamet Consectetur Adipiscing"}
           </Link>
         </h3>
-        {excerpt && <p className="blog-excerpt text-muted mb-4" style={{ fontSize: '15px', lineHeight: '1.6' }}>{excerpt}</p>}
+        {excerpt && <p className="blog-excerpt text-white mb-4" style={{ fontSize: '15px', lineHeight: '1.6' }}>{excerpt}</p>}
         <div className="button">
           <Link href={`/blog/${postSlug}`} className="btn btn-primary rounded-pill px-4">Read More</Link>
         </div>

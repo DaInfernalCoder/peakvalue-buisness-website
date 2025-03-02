@@ -20,7 +20,7 @@ export default function BookConsultation() {
               <div className="card shadow-sm border-0 p-4 mb-4">
                 <div className="card-body text-center">
                   <h3 className="mb-3">Schedule Your Free 30-Minute Consultation</h3>
-                  <p className="text-muted mb-4">
+                  <p className="text-white mb-4">
                     Speak with our business advisors about your goals and how we can help you achieve them.
                     Whether you&apos;re looking to buy or sell a business, we&apos;re here to guide you through the process.
                   </p>

@@ -14,7 +14,7 @@ export const blogPosts = [
     slug: "understanding-business-valuation",
     image: BlogImg1,
     date: "Mar 10",
-    title: "Understanding Business Valuation: Key Factors That Determine Your Business's Worth",
+    title: "Key Factors That Determine Your Business's Worth",
     excerpt: "Learn about the critical elements that influence your business valuation, from financial performance to market conditions, and how to improve your company's value.",
     author: "Sunny Datta",
     authorTitle: "Business Valuation Specialist",
