@@ -77,26 +77,8 @@ export default function BlogPost({ params }) {
                   </div>
                 </div>
                 
-                <div className="post-nav">
-                  <div className="row align-items-center">
-                    <div className="col-lg-6 col-md-6 col-12">
-                      <div className="prev-post text-center text-md-start p-4">
-                        <Link href="/blog" className="d-block">
-                          <h4>Back to Blog</h4>
-                          <span className="text-primary">View all articles</span>
-                        </Link>
-                      </div>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-12">
-                      <div className="next-post text-center text-md-end p-4">
-                        <Link href="/book-consultation" className="d-block">
-                          <h4>Ready to Talk?</h4>
-                          <span className="text-primary">Book a consultation</span>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+
               </div>
             </div>
           </div>

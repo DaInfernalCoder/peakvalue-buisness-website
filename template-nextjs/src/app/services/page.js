@@ -35,8 +35,6 @@ export default function Services() {
               data-wow-duration="1s"
             >
               <SingleService
-                image={ServiceImg1}
-                icon="fa fa-edit"
                 title="Business Consulting"
                 description="  There is now an abundance of readable dummy texts. These are
                     usually used when a text is required purely."

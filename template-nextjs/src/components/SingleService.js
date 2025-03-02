@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import ServiceImg1 from "../../public/images/service/service-img-1.jpg";
-
 export default function SingleService(props) {
   const {
     cardNumberClass,
@@ -38,13 +36,29 @@ export default function SingleService(props) {
               }}>
                 {svgIcon}
               </div>
-            ) : (
+            ) : image ? (
               <Image
-                src={image ? image : ServiceImg1}
-                alt="#"
+                src={image}
+                alt={title || "Service image"}
                 width={100}
                 height={100}
+                style={{
+                  objectFit: "cover",
+                  borderRadius: "50%"
+                }}
               />
+            ) : (
+              <div style={{ 
+                width: '100px', 
+                height: '100px', 
+                backgroundColor: '#f5f8ff',
+                borderRadius: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}>
+                <i className={icon ? icon : "fa fa-edit"} style={{ fontSize: '32px' }}></i>
+              </div>
             )}
             <i className={icon ? icon : "fa fa-edit"}></i>
           </div>

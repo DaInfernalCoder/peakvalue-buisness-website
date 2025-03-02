@@ -67,47 +67,29 @@ export default function MobileOffcanvas() {
                   <li>
                     <Link
                       onClick={handleClose}
-                      className={` ${isActive("/services") ? "active" : ""}`}
-                      href="/services"
+                      className={` ${isActive("/about-us") ? "active" : ""}`}
+                      href="/about-us"
                     >
-                      Services
+                      About
                     </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="menu-arrow"
-                      onClick={() => toggleSubMenu(1)}
+                    <Link
+                      onClick={handleClose}
+                      className={` ${isActive("/process") ? "active" : ""}`}
+                      href="/process"
                     >
-                      Portfolio
-                      <i className="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      className={`sub-menu ${openSubMenu === 1 ? "open" : ""}`}
+                      Process
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={handleClose}
+                      className={` ${isActive("/business-for-sale") ? "active" : ""}`}
+                      href="/business-for-sale"
                     >
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/portfolio") ? "active" : ""
-                          }`}
-                          href="/portfolio"
-                        >
-                          Portfolio
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/portfolio-single") ? "active" : ""
-                          }`}
-                          href="/portfolio-single"
-                        >
-                          Portfolio Single
-                        </Link>
-                      </li>
-                    </ul>
+                      Business for Sale
+                    </Link>
                   </li>
                   <li>
                     <Link
@@ -117,88 +99,6 @@ export default function MobileOffcanvas() {
                     >
                       Blog
                     </Link>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="menu-arrow"
-                      onClick={() => toggleSubMenu(3)}
-                    >
-                      Pages<i className="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      className={`sub-menu ${openSubMenu === 3 ? "open" : ""}`}
-                    >
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/about-us") ? "active" : ""
-                          }`}
-                          href="/about-us"
-                        >
-                          About Us
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${isActive("/team") ? "active" : ""}`}
-                          href="/team"
-                        >
-                          Team
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${isActive("/pricing") ? "active" : ""}`}
-                          href="/pricing"
-                        >
-                          Pricing
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/testimonials") ? "active" : ""
-                          }`}
-                          href="/testimonials"
-                        >
-                          Testimonials
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${isActive("/faq") ? "active" : ""}`}
-                          href="/faq"
-                        >
-                          Faq&apos;s
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${isActive("/404") ? "active" : ""}`}
-                          href="/404"
-                        >
-                          404 Page
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/mail-success") ? "active" : ""
-                          }`}
-                          href="/mail-success"
-                        >
-                          Mail Success
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     <Link
@@ -214,11 +114,11 @@ export default function MobileOffcanvas() {
               {/* Mobile menu modal bottom */}
               <div className="mobile-menu-modal-bottom">
                 <Link
-                  href="/contact"
+                  href="/book-consultation"
                   className="theme-btn"
                   onClick={handleClose}
                 >
-                  <span>Get a quote</span>
+                  <span>book consultation</span>
                 </Link>
               </div>
             </div>

@@ -21,14 +21,6 @@ export default function Service() {
               data-wow-duration="1s"
             >
               <div className="single-service featured-service text-center">
-                <div className="icon-container mb-4">
-                  <img 
-                    src="/images/icons/briefcase-bw.svg" 
-                    alt="Business Consulting" 
-                    className="svg-icon" 
-                    style={{ width: '120px', height: '120px' }}
-                  />
-                </div>
                 <h3 className="service-title text-2xl font-bold mb-4">Business Consulting & Strategic Solutions</h3>
                 <p className="service-description mb-5">
                   We provide comprehensive strategic guidance to optimize your operations, streamline processes, and drive business growth. 
