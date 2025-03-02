@@ -23,7 +23,7 @@ export default function Topbar() {
                   <li>
                     <a href="#">
                       <i className="fa fa-map-marker"></i>
-                      <span>Location:</span> 1334 Brittmoore Rd Suite 1000B, Houston, TX 77043 {" "}
+                      <span>Location:</span> 1334 Brittmoore Road, Suite 1327, Houston, TX 77043 {" "}
                     </a>
                   </li>
                 </ul>

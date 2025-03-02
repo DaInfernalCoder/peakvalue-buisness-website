@@ -30,30 +30,6 @@ export default function SingleTeam(props) {
             <h4>{name ? name : "Sam Martin"}</h4>
             <p>{designation ? designation : "Web Designer"}</p>
           </div>
-          <div className="team-social">
-            <ul>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-facebook"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-twitter"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-linkedin"></i>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <i className="fa fa-dribbble"></i>
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </>

@@ -28,7 +28,7 @@ export default function BookConsultation() {
               </div>
               
               <CalendlyWidget 
-                url="peakvalue/consultation"
+                url="sunnydatta2016/30min"
                 height={700}
                 primaryColor="00265F"
                 hideGdprBanner={true}
