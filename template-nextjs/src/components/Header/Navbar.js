@@ -101,45 +101,14 @@ export default function Navbar() {
                                   </Link>
                                 </li>
                                 <li>
-                                  <Link href="#">
-                                    Blogs<i className="fa fa-angle-down"></i>
+                                  <Link
+                                    className={` ${
+                                      pathname === "/blog" ? "active" : ""
+                                    }`}
+                                    href="/blog"
+                                  >
+                                    Blog
                                   </Link>
-                                  <ul className="sub-menu">
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/blog" ? "active" : ""
-                                        }`}
-                                        href="/blog"
-                                      >
-                                        Blog Archive
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/blog-sidebar"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/blog-sidebar"
-                                      >
-                                        Blog With Sidebar
-                                      </Link>
-                                    </li>
-                                    <li>
-                                      <Link
-                                        className={` ${
-                                          pathname === "/blog-single"
-                                            ? "active"
-                                            : ""
-                                        }`}
-                                        href="/blog-single"
-                                      >
-                                        Blog Single
-                                      </Link>
-                                    </li>
-                                  </ul>
                                 </li>
                                 <li>
                                   <Link

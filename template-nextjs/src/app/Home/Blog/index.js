@@ -10,9 +10,9 @@ export default function Blog() {
           <div className="row">
             <div className="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
               <SectionTitle
-                smTitle="Blog"
-                title="latest Articles"
-                description="All the lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+                smTitle="Business Insights"
+                title="Expert Advisory Articles"
+                description="Valuable insights and strategies for buying, selling, and maximizing the value of your business. Our expert team shares knowledge to help you make informed decisions."
               />
             </div>
           </div>

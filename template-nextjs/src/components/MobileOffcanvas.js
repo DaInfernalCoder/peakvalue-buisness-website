@@ -110,48 +110,13 @@ export default function MobileOffcanvas() {
                     </ul>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="menu-arrow"
-                      onClick={() => toggleSubMenu(2)}
+                    <Link
+                      onClick={handleClose}
+                      className={` ${isActive("/blog") ? "active" : ""}`}
+                      href="/blog"
                     >
-                      Blogs<i className="fa fa-angle-down"></i>
-                    </a>
-                    <ul
-                      className={`sub-menu ${openSubMenu === 2 ? "open" : ""}`}
-                    >
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${isActive("/blog") ? "active" : ""}`}
-                          href="/blog"
-                        >
-                          Blog Archive
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/blog-sidebar") ? "active" : ""
-                          }`}
-                          href="/blog-sidebar"
-                        >
-                          Blog With Sidebar
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          onClick={handleClose}
-                          className={` ${
-                            isActive("/blog-single") ? "active" : ""
-                          }`}
-                          href="/blog-single"
-                        >
-                          Blog Single
-                        </Link>
-                      </li>
-                    </ul>
+                      Blog
+                    </Link>
                   </li>
                   <li>
                     <a

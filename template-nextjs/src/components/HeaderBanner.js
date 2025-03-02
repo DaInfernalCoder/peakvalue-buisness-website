@@ -7,6 +7,8 @@ const DEFAULT_IMAGES = {
   process: "/images/business-meeting.jpg",
   business: "/images/business-handshake.jpg",
   contact: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Professional signing document
+  consultation: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Business meeting/consultation
+  blog: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080", // Professional workspace with laptop/documents
   default: "/images/breadcrumbs-bg.jpg"
 };
 

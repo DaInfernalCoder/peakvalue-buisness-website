@@ -1,14 +1,16 @@
 "use client";
 
-import Breadcrumbs from "@/components/Breadcrumbs";
+import HeaderBanner from "@/components/HeaderBanner";
 import CalendlyWidget from "@/components/CalendlyWidget";
 
 export default function BookConsultation() {
   return (
     <>
-      <Breadcrumbs 
-        pageTitle="Book a Consultation"
-        pageName="Book Consultation"
+      <HeaderBanner 
+        title="Book a Consultation"
+        bannerType="consultation"
+        height="400px"
+        showOverlay={false}
       />
       
       <section className="section">
