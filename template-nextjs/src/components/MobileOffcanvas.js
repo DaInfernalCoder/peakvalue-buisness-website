@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +10,7 @@ import Logo from "../../public/images/main-logo.png";
 
 export default function MobileOffcanvas() {
   const pathname = usePathname();
+  const offcanvasRef = useRef(null);
 
   const [show, setShow] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null);
@@ -38,7 +39,13 @@ export default function MobileOffcanvas() {
       </button>
 
       {/* <!-- Mobile Menu Modal --> */}
-      <Offcanvas show={show} onHide={handleClose} className="mobile-menu-modal">
+      <Offcanvas 
+        show={show} 
+        onHide={handleClose} 
+        className="mobile-menu-modal"
+        backdrop={true}
+        placement="end"
+      >
         <div className="modal-dialog offcanvas-dialog">
           <div className="modal-content">
             <div className="modal-header offcanvas-header">
