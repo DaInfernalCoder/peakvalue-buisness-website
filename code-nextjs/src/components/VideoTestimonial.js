@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from 'react';
+import { useState, useRef, Suspense } from 'react';
 import ReactPlayer from 'react-player/lazy';
 
 export default function VideoTestimonial() {
@@ -44,25 +44,27 @@ export default function VideoTestimonial() {
         )}
         
         <div className={`player-container ${hasStarted ? 'visible' : 'hidden'}`}>
-          <ReactPlayer
-            ref={playerRef}
-            url="/images/testimonial/IMG_3319.mp4"
-            width="100%"
-            height="100%"
-            playing={isPlaying}
-            controls={hasStarted}
-            onPlay={handlePlay}
-            onPause={handlePause}
-            onEnded={handleEnded}
-            config={{
-              file: {
-                attributes: {
-                  controlsList: 'nodownload',
-                  disablePictureInPicture: true,
+          <Suspense fallback={<div className="loading-placeholder">Loading video...</div>}>
+            <ReactPlayer
+              ref={playerRef}
+              url="/images/testimonial/IMG_3319.mp4"
+              width="100%"
+              height="100%"
+              playing={isPlaying}
+              controls={hasStarted}
+              onPlay={handlePlay}
+              onPause={handlePause}
+              onEnded={handleEnded}
+              config={{
+                file: {
+                  attributes: {
+                    controlsList: 'nodownload',
+                    disablePictureInPicture: true,
+                  }
                 }
-              }
-            }}
-          />
+              }}
+            />
+          </Suspense>
         </div>
       </div>
       
@@ -120,6 +122,19 @@ export default function VideoTestimonial() {
           font-size: 1.25rem;
           font-weight: 500;
           letter-spacing: 1px;
+        }
+        
+        .loading-placeholder {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 1.25rem;
+          font-weight: 500;
+          background-color: #00265F;
         }
         
         .play-button {
