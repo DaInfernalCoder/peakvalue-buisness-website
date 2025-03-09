@@ -428,7 +428,7 @@ export default function AboutUs() {
                   paddingLeft: "20px",
                   paddingTop: "10px"
                 }}>
-                  One of Sunny and Amita's key strengths lies in their ability to navigate complex negotiations with ease. Their strategic approach, attention to detail, and comprehensive understanding of market dynamics played a pivotal role in ensuring a seamless and profitable transaction in the sale of our business.
+                  One of Sunny and Amita&apos;s key strengths lies in their ability to navigate complex negotiations with ease. Their strategic approach, attention to detail, and comprehensive understanding of market dynamics played a pivotal role in ensuring a seamless and profitable transaction in the sale of our business.
                 </p>
                 <div style={{
                   display: "flex",
