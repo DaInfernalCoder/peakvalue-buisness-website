@@ -428,7 +428,7 @@ export default function AboutUs() {
                   paddingLeft: "20px",
                   paddingTop: "10px"
                 }}>
-                  Working with Sunny and Amita was transformative for our business exit strategy. Their deep industry knowledge and personalized approach helped us navigate a complex sale process with confidence. We achieved a valuation that exceeded our expectations and found the perfect buyer who aligned with our company values.
+                  One of Sunny and Amita's key strengths lies in their ability to navigate complex negotiations with ease. Their strategic approach, attention to detail, and comprehensive understanding of market dynamics played a pivotal role in ensuring a seamless and profitable transaction in the sale of our business.
                 </p>
                 <div style={{
                   display: "flex",
@@ -447,7 +447,7 @@ export default function AboutUs() {
                     fontWeight: "bold",
                     fontSize: "20px"
                   }}>
-                    JD
+                    DB
                   </div>
                   <div>
                     <h4 style={{
@@ -456,14 +456,14 @@ export default function AboutUs() {
                       fontWeight: "600",
                       color: "#333"
                     }}>
-                      Surangi Udugama
+                      Don Babineaux
                     </h4>
                     <p style={{
                       margin: "0",
                       fontSize: "14px",
                       color: "#666"
                     }}>
-                      CEO, Hanna and Peige LLC
+                      Former President, Century Instruments
                     </p>
                   </div>
                 </div>

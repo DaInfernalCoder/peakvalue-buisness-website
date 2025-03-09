@@ -29,7 +29,7 @@ export default function Sliders() {
       <div className="w-full max-w-5xl mx-auto px-4">
         <Swiper
           slidesPerView={4}
-          spaceBetween={15}
+          spaceBetween={30}
           loop={true}
           autoplay={{ delay: 4000 }}
           modules={[Navigation, Autoplay]}
@@ -55,13 +55,13 @@ export default function Sliders() {
         >
           {clientSliders.map((singleSlider) => (
             <SwiperSlide key={singleSlider.id}>
-              <div className="single-client flex items-center justify-center h-[110px] bg-white rounded-md p-4">
+              <div className="single-client flex items-center justify-center h-[120px] bg-white rounded-md p-6 border border-gray-100 shadow-sm">
                 <Image 
                   src={singleSlider.img} 
-                  alt="Client logo" 
+                  alt="Industry affiliation logo" 
                   width={255} 
-                  height={110}
-                  className="object-contain max-h-[90px] w-auto mx-auto"
+                  height={120}
+                  className={`object-contain w-auto mx-auto ${singleSlider.id === "slider1" ? "max-h-[80px]" : "max-h-[100px]"}`}
                   style={{ objectFit: 'contain' }} 
                 />
               </div>
