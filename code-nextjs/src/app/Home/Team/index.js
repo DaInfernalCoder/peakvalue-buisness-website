@@ -23,17 +23,6 @@ export default function Team() {
           <div className="row justify-content-center">
             <div
               className="col-lg-4 col-md-6 col-12 wow animate__fadeInUp"
-              data-wow-duration="1s"
-            >
-              <SingleTeam
-                image={TeamImg1}
-                name="Sunny Datta"
-                designation="Founder & Business Advisor"
-              />
-            </div>
-
-            <div
-              className="col-lg-4 col-md-6 col-12 wow animate__fadeInUp"
               data-wow-duration="1.1s"
             >
               <SingleTeam
