@@ -120,6 +120,30 @@ export async function POST(request) {
         .eq('id', contactData[0].id);
     }
 
+    // Send additional notification to sunnydatta2016@gmail.com
+    const { data: additionalNotificationData, error: additionalNotificationError } = await resend.emails.send({
+      from: SENDER_EMAIL,
+      to: ['sunnydatta2016@gmail.com'],
+      subject: `Contact Form Submission Copy: ${subject}`,
+      html: `
+        <h2>Contact Form Submission Copy</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong></p>
+        <div style="background-color: #f5f5f5; padding: 15px; border-left: 4px solid #007bff; margin: 10px 0;">
+          ${message.replace(/\n/g, '<br>')}
+        </div>
+        <p><strong>Submitted at:</strong> ${new Date().toLocaleString()}</p>
+        <hr>
+        <p><em>This is a copy of the contact form submission received on the Peak Value Business website.</em></p>
+      `,
+    });
+
+    if (additionalNotificationError) {
+      console.error('Additional notification email error:', additionalNotificationError);
+    }
+
     // Send confirmation email to the user
     const { data: confirmationData, error: confirmationError } = await resend.emails.send({
       from: SENDER_EMAIL,
@@ -128,7 +152,7 @@ export async function POST(request) {
       html: `
         <h2>Thank you for contacting us!</h2>
         <p>Dear ${name},</p>
-        <p>We've received your message regarding "${subject}" and will get back to you as soon as possible.</p>
+        <p>We've received your message regarding &quot;${subject}&quot; and will get back to you as soon as possible.</p>
         <p>In the meantime, if you have any urgent inquiries, please don't hesitate to call us directly.</p>
         <p>Best regards,</p>
         <p>The Peak Value Team</p>
