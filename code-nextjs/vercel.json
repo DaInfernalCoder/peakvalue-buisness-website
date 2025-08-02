@@ -2,7 +2,6 @@
     "crons": [
         {
             "path": "/api/contact/keep-alive", 
-            "comment": "This schedule runs every day at midnight (00:00 UTC)",
             "schedule": "0 0 * * *"
         }
     ]
