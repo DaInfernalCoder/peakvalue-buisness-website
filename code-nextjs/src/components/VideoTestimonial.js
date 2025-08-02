@@ -1,7 +1,11 @@
 "use client";
 
-import { useState, useRef, Suspense } from 'react';
-import ReactPlayer from 'react-player/lazy';
+import { useState, useRef, useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+const ReactPlayer = dynamic(() => import('react-player/lazy'), {
+  ssr: false,
+});
 
 export default function VideoTestimonial() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -44,27 +48,25 @@ export default function VideoTestimonial() {
         )}
         
         <div className={`player-container ${hasStarted ? 'visible' : 'hidden'}`}>
-          <Suspense fallback={<div className="loading-placeholder">Loading video...</div>}>
-            <ReactPlayer
-              ref={playerRef}
-              url="/images/testimonial/IMG_3319.mp4"
-              width="100%"
-              height="100%"
-              playing={isPlaying}
-              controls={hasStarted}
-              onPlay={handlePlay}
-              onPause={handlePause}
-              onEnded={handleEnded}
-              config={{
-                file: {
-                  attributes: {
-                    controlsList: 'nodownload',
-                    disablePictureInPicture: true,
-                  }
+          <ReactPlayer
+            ref={playerRef}
+            url="/images/testimonial/IMG_3319.mp4"
+            width="100%"
+            height="100%"
+            playing={isPlaying}
+            controls={hasStarted}
+            onPlay={handlePlay}
+            onPause={handlePause}
+            onEnded={handleEnded}
+            config={{
+              file: {
+                attributes: {
+                  controlsList: 'nodownload',
+                  disablePictureInPicture: true,
                 }
-              }}
-            />
-          </Suspense>
+              }
+            }}
+          />
         </div>
       </div>
       

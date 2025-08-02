@@ -6,7 +6,6 @@ import ScrollTop from "@/components/ScrollTop";
 import ColorLayout from "@/components/ColorLayout";
 import Preloader from "@/components/Preloader";
 import { CalendlyProvider } from "@/context/CalendlyContext";
-import { Poppins } from "next/font/google";
 
 // Bootstrap CSS
 import "../../public/css/bootstrap.min.css";
@@ -32,13 +31,6 @@ import "lightbox.js-react/dist/index.css";
 // Global CSS
 import "./globals.css";
 
-const poppins = Poppins({
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
 export const metadata = {
   title:
     "PeakValue Business Advisors",
@@ -48,7 +40,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body>
         <>
           <Preloader />
           <CalendlyProvider>
