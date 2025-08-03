@@ -6,7 +6,7 @@ import { Resend } from 'resend';
 
 // Initialize Supabase client - with error handling for missing environment variables
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseServiceKey = process.env.NEXT_PUBLIC_SUPABASE_SERVICE_ROLE_KEY;
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 // Check if required environment variables are defined
 if (!supabaseUrl || !supabaseServiceKey) {

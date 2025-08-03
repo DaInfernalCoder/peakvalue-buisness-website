@@ -6,8 +6,8 @@ export async function GET() {
       `${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/contacts?limit=1`,
       {
         headers: {
-          apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
+          apikey: process.env.SUPABASE_ANON_KEY,
+          Authorization: `Bearer ${process.env.SUPABASE_ANON_KEY}`,
         },
       }
     );
