@@ -4,24 +4,9 @@ import { Resend } from 'resend';
 
 // Server Component: This file is executed on the server side only
 
-// Initialize Supabase client - with error handling for missing environment variables
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+// Supabase client will be initialized inside the function to avoid build-time errors
 
-// Check if required environment variables are defined
-if (!supabaseUrl || !supabaseServiceKey) {
-  console.error('Missing Supabase environment variables:', {
-    hasUrl: !!supabaseUrl,
-    hasServiceKey: !!supabaseServiceKey
-  });
-}
-
-// Create Supabase client with fallbacks to prevent build errors
-const supabase = createClient(supabaseUrl || '', supabaseServiceKey || '');
-
-// Initialize Resend
-const resendApiKey = process.env.RESEND_API_KEY;
-const resend = new Resend(resendApiKey || ''); // Add fallback for build time
+// Resend will be initialized inside the function to avoid build-time errors
 
 // Business email to receive notifications - using the correct env variable names
 const BUSINESS_EMAIL = process.env.CONTACT_ADMIN_EMAIL || 'info@peakvaluebusiness.com';
@@ -29,6 +14,10 @@ const SENDER_EMAIL = process.env.CONTACT_FROM_EMAIL || 'onboarding@resend.dev';
 
 export async function POST(request) {
   try {
+    // Initialize Supabase client inside function to avoid build-time errors
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
     // Parse the request body
     const formData = await request.json();
     const { name, email, subject, message } = formData;
@@ -59,6 +48,13 @@ export async function POST(request) {
       );
     }
 
+    // Create Supabase client
+    const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
+    // Initialize Resend inside function 
+    const resendApiKey = process.env.RESEND_API_KEY;
+    const resend = resendApiKey ? new Resend(resendApiKey) : null;
+
     // Store contact data in Supabase
     const { data: contactData, error: supabaseError } = await supabase
       .from('contacts')
@@ -80,8 +76,8 @@ export async function POST(request) {
       );
     }
 
-    // Check if Resend API key is available
-    if (!resendApiKey) {
+    // Check if Resend is properly initialized
+    if (!resend) {
       console.error('Resend API key is missing');
       await supabase
         .from('contacts')
