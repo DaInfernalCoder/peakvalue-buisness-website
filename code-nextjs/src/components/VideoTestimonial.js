@@ -1,11 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-
-const ReactPlayer = dynamic(() => import('react-player/lazy'), {
-  ssr: false,
-});
+import { useState, useRef } from 'react';
+import ReactPlayer from 'react-player/lazy';
 
 export default function VideoTestimonial() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -124,19 +120,6 @@ export default function VideoTestimonial() {
           font-size: 1.25rem;
           font-weight: 500;
           letter-spacing: 1px;
-        }
-        
-        .loading-placeholder {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: rgba(255, 255, 255, 0.8);
-          font-size: 1.25rem;
-          font-weight: 500;
-          background-color: #00265F;
         }
         
         .play-button {
